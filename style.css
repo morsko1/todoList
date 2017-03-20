@@ -1,0 +1,99 @@
+*{
+	box-sizing: border-box;
+}
+body{
+	font-family: "Lato", "Lucida Grande","Lucida Sans Unicode", Tahoma, Sans-Serif;
+	font-size: 1em;
+	background-color: #FF8869;
+}
+.clear:after {
+	content: "";
+	display: table;
+	clear: both;
+}
+.container {
+	width: 400px;
+	margin: 10px auto;
+	background-color: white;
+	padding: 2em;
+	border-radius: 6px;
+	height: 500px;
+	position: relative;
+	user-select: none;
+}
+h1 {
+	text-align: center;
+	font-size: 2em;
+}
+.form {
+	position: absolute;
+	bottom: 5em;
+}
+.input-add {
+	width: 85%;
+	border:none;
+	outline: none;
+	background-color: #eee;
+	font-size: 1.5em;
+	padding: 0.5em;
+	border-top-left-radius: 0.5em;
+	border-bottom-left-radius: 0.5em;
+	float: left;
+}
+.plus {
+	width: 15%;
+	height: 4em;
+	border-top-right-radius: 0.75em;
+	border-bottom-right-radius: 0.75em;
+	background-color: #2ECC71;
+	display: flex;
+	cursor: pointer;
+	outline: none;
+	border: none;
+}
+.plus>i {
+	margin:auto;
+	color: #fff;
+	font-size: 2.5em;
+}
+.buttons {
+	position: absolute;
+	bottom:2em;
+	left:20%;
+	display: flex;
+	flex-flow: row wrap;
+	width: 60%;
+}
+.buttons>div{
+	width: 50%;
+	text-align: center;
+	font-size: 2em;
+	justify-content: space-around;
+}
+.buttons>div>i{
+	cursor: pointer;
+}
+.fa-times {
+	color: #C30000;
+}
+.fa-check {
+	color: #2ECC71;
+}
+.list{
+	margin-top: 1em;
+	width: 100%;
+	max-height: 15.5em;
+	overflow: auto;
+}
+.item{
+	font-size: 1.5em;
+	padding: 0.3em;
+	border-bottom: 2px solid #ddd;
+	cursor: pointer;
+}
+.item-marked {
+	background-color: #ddd;
+}
+.item-done {
+	text-decoration: line-through;
+}
